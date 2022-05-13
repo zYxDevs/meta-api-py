@@ -6,9 +6,10 @@ class META():
         self.url = "https://metavoid.info/api"
 
     def  animeimage(self, anime_name, type):
+        try:
             url = f"{self.url}/animeimage/{type}/{anime_name}"
             response = url
-            return response.json()
+            return response
         except  Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
     
