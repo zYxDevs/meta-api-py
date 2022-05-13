@@ -3,19 +3,16 @@ from requests import get
 
 class META():
     def __init__(self):
-        self.url = "https://metavoid.vercel.app/api"
+        self.url = "https://metavoid.info/api"
 
-    def  animeimage(self, anime_name, nsfw=None):
-        try:
-            if nsfw:
-                url = f"{self.url}/animeimage/nsfw/{anime_name}"
-            url = f"{self.url}/animeimage/sfw/{anime_name}"
-            response = get(url, timeout=5)
-            return response.json()
+    def  animeimage(self, anime_name, type):
+            url = f"{self.url}/animeimage/{type}/{anime_name}"
+            response = url
+            return response
         except  Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
     
-    def yt_info(self, yt_url):
+    def yt_dl(self, yt_url):
         try:
             url = f"{self.url}/ytdl?link={yt_url}"
             response = get(url, timeout=5)
@@ -23,9 +20,9 @@ class META():
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
     
-    def wallpaper(self, query):
+    def wallpaper(self, query, page):
         try:
-            url = f"{self.url}/wall/alphacoders?search={query}&page=1"
+            url = f"{self.url}/wall/alphacoders?search={query}&page={page}"
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
@@ -55,11 +52,9 @@ class META():
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
 
-    def wiki(self, query, lang="en"):
+    def wiki(self, query, lang):
         try:
-            if lang:
-                url = f"{self.url}/wiki?search={query}&lang={lang}" 
-            url = f"{self.url}/wiki?search={query}&lang=en"
+            url = f"{self.url}/wiki?search={query}&lang={lang}"        
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
@@ -89,12 +84,68 @@ class META():
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
 
-    def translate(self, text, lang=None):
+    def translate(self, text, lang):
         try:
-            if lang:
-                url = f"{self.url}/translate/text={text}/language={lang}" 
-            url = f"{self.url}/translate/text={text}/language=en"
+            url = f"{self.url}/translate/text={text}/language={lang}"           
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+    def urban(self, text, page):
+        try:
+            url = f"{self.url}/urban?search={text}&page={page}"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+    def urban_random(self):
+        try:
+            url = f"{self.url}/urban/random"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+    def torrent_nyaa(self, text, page):
+        try:
+            url = f"{self.url}/torrent/nyaa?search={text}&page={page}"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+    def torrent_nyaa(self, text, page):
+        try:
+            url = f"{self.url}/torrent/1337x?search={text}&page={page}"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+    def manga_search(self, text, page):
+        try:
+            url = f"{self.url}/manga?search={text}&page={page}"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+    def manga_detail(self, text):
+        try:
+            url = f"{self.url}/manga/detail?id={text}"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+    def gogoanimedl(self, text):
+        try:
+            url = f"{self.url}/anime/gogodl?link={text}"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+
