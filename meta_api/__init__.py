@@ -116,9 +116,17 @@ class META():
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
 
-    def torrent_nyaa(self, text, page):
+    def torrent_1337x(self, text, page):
         try:
             url = f"{self.url}/torrent/1337x?search={text}&page={page}"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
+    def mangadl(self, manga, chapterno):
+        try:
+            url = f"{self.url}/mangadl?manga={manga}&chapter={chapterno}"           
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
@@ -131,6 +139,7 @@ class META():
             return response.json()
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
 
     def manga_detail(self, text):
         try:
