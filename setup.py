@@ -16,11 +16,12 @@ setuptools.setup(
     url='https://github.com/metavoidteam/meta_api.git',
     packages=setuptools.find_packages(),
     classifiers=[
-        'Development Status :: 4 - alpha',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: Implementation :: CPython',
-        'Typing :: Typed'
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Operating System :: OS Independent",
     ],
     install_requires= ['requests'],
     python_requires='>=3.6'
