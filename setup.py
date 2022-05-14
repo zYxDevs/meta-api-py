@@ -5,8 +5,8 @@ with open("README.md", "r") as txt:
     long_description = txt.read()
 
 setuptools.setup(
-    name='metaapi',
-    version='1.0.0',
+    name='metavoidapi',
+    version='1.0.2',
     description='Metavoid Api Wrapper',
     long_description=long_description,
     long_description_content_type="text/markdown",
