@@ -6,11 +6,11 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Upload Python Package
+name: metavoidapi
 
 on:
   release:
-    types: [master]
+    types: [published]
 
 permissions:
   contents: read
