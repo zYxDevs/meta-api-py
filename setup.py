@@ -5,15 +5,15 @@ with open("README.md", "r") as txt:
     long_description = txt.read()
 
 setuptools.setup(
-    name='metavoidapi',
+    name='metaapi',
     version='1.0.0',
     description='Metavoid Api Wrapper',
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
-    author='Tamilvip007',
-    author_email='indrajeethy.it20@gmail.com',
-    url='https://github.com/metavoidteam/meta_api.git',
+    author='metavoid',
+    author_email='metavoidteam@gmail.com',
+    url='https://github.com/metavoidteam/metaapi-py.git',
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
