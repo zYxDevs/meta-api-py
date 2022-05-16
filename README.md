@@ -19,7 +19,13 @@ To get wallpaper images
 ```
 from metaapi import META
 x = META()
-print(x.wallpaper("Pokemon", "1"))
+print(x.wallpaper("alphacoder", "Pokemon", "1"))
+```
+
+```
+from metaapi import META
+x = META()
+print(x.wallpaper("wallhaven", "Pokemon", "1"))
 ```
 
 To get anime images
