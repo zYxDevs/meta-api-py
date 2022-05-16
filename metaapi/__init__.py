@@ -21,9 +21,9 @@ class META():
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
     
-    def wallpaper(self, query, page):
+    def wallpaper(self, site, query, page):
         try:
-            url = f"{self.url}/wall/alphacoders?search={query}&page={page}"
+            url = f"{self.url}/wall/{site}?search={query}&page={page}"
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
