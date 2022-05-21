@@ -149,4 +149,13 @@ x = META()
 print(x.torrent_nyaa("pokemon", "1"))
 ```
 
+To get talk chatbot
+
+
+```
+from metaapi import META
+x = META()
+print(x.chatbot("hi"))
+```
+
 <i>Checkout code at <a href="github.com/metavoidteam/MetaApi-Py/blob/master/main.py">main.py</a></i>
