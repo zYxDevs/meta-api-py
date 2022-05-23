@@ -116,7 +116,15 @@ class META():
             return response.json()
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
-    
+
+    def chatbot(self, message):
+        try:
+            url = f"{self.url}/chatbot?message={message}"           
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+
 
     def torrent_1337x(self, text, page):
         try:
@@ -158,4 +166,3 @@ class META():
             return response.json()
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
-
