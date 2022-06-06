@@ -158,4 +158,13 @@ x = META()
 print(x.chatbot("hi"))
 ```
 
+To get random waifu
+
+
+```
+from metaapi import META
+x = META()
+print(x.waifu())
+```
+
 <i>Checkout code at <a href="github.com/metavoidteam/MetaApi-Py/blob/master/main.py">main.py</a></i>
