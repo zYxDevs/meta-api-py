@@ -133,8 +133,6 @@ class META():
         except Exception as e:
             return "An error occured report on @metavoidsupport\n\n{}".format(e)
 
-
-
     def torrent_1337x(self, text, page):
         try:
             url = f"{self.url}/torrent/1337x?search={text}&page={page}"           
