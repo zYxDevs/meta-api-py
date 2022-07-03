@@ -5,13 +5,11 @@ class META():
     def __init__(self):
         self.url = "https://metavoid.info/api"
 
-    def  animeimage(self, anime_name, type):
+    def animeimage(self, anime_name, type):
         try:
-            url = f"{self.url}/animeimage/{type}/{anime_name}"
-            response = url
-            return response
-        except  Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"{self.url}/animeimage/{type}/{anime_name}"
+        except Exception as e:
+            return f"An error occured report on @metavoidsupport\n\n{e}"
     
     def yt_dl(self, yt_url):
         try:
@@ -19,7 +17,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
     
     def wallpaper(self, site, query, page):
         try:
@@ -27,7 +25,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def truth(self):
         try:
@@ -35,7 +33,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def dare(self):
         try:
@@ -43,7 +41,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def vanitas(self, user):
         try:
@@ -51,7 +49,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def wiki(self, query, lang):
         try:
@@ -59,7 +57,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def insta_dl(self, url):
         try:
@@ -67,7 +65,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
     
     def fb_dl(self, url):
         try:
@@ -75,7 +73,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def twitter_dl(self, url):
         try:
@@ -83,7 +81,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def translate(self, text, lang):
         try:
@@ -91,7 +89,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def urban(self, text, page):
         try:
@@ -99,7 +97,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def urban_random(self):
         try:
@@ -107,7 +105,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def torrent_nyaa(self, text, page):
         try:
@@ -115,7 +113,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def chatbot(self, message):
         try:
@@ -123,7 +121,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def waifu(self):
         try:
@@ -131,7 +129,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def torrent_1337x(self, text, page):
         try:
@@ -139,7 +137,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def mangadl(self, manga, chapterno):
         try:
@@ -147,7 +145,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def manga_search(self, text, page):
         try:
@@ -155,7 +153,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
 
     def manga_detail(self, text):
@@ -164,7 +162,7 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
 
     def gogoanimedl(self, text):
         try:
@@ -172,4 +170,4 @@ class META():
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @metavoidsupport\n\n{}".format(e)
+            return f"An error occured report on @metavoidsupport\n\n{e}"
